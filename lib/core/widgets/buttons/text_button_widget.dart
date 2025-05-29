@@ -8,7 +8,6 @@ class TextButtonWidget extends StatelessWidget {
     super.key,
     required this.label,
     this.onPressed,
-    this.isUnderline,
     this.fontSize,
     this.fontWeight,
     this.color,
@@ -16,7 +15,6 @@ class TextButtonWidget extends StatelessWidget {
 
   final String label;
   final VoidCallback? onPressed;
-  final bool? isUnderline;
   final double? fontSize;
   final FontWeight? fontWeight;
   final Color? color;
@@ -28,11 +26,11 @@ class TextButtonWidget extends StatelessWidget {
       child: TextButton(
         style: TextButton.styleFrom(padding: EdgeInsets.only(bottom: 8.h)),
         onPressed: onPressed,
-        child: AppText.bodyLarge(
+        child: Txt(
           label,
+          tst: TST.bodyLarge,
           fontSize: fontSize ?? Dimension.btnText,
           fontWeight: fontWeight ?? FontWeight.w800,
-          isUnderline: isUnderline,
           color: color ?? AppColor.buttonTxt,
           height: 1.8.sp,
           letterSpacing: 0.8.sp,

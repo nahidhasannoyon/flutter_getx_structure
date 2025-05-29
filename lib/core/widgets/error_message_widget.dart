@@ -24,9 +24,10 @@ class ErrorMessageWidget extends StatelessWidget {
       child: ListTile(
         contentPadding: EdgeInsets.zero,
         leading: Icon(Icons.error_outline, color: AppColor.lightErrorIcon),
-        title: AppText.titleSmall(errorTitle, color: AppColor.errorTileText),
-        subtitle: AppText.bodyMedium(
+        title: Txt(errorTitle, tst: TST.titleSmall),
+        subtitle: Txt(
           errorMessage,
+          tst: TST.bodyMedium,
           color: AppColor.errorBodyText,
         ),
       ),

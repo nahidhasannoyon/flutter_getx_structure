@@ -2,6 +2,6 @@
 
 class AppIcon {
   AppIcon._();
-
-  static const String add = 'assets/images/icons/add.png';
+  // Ex. // Icon Paths
+  // static const String add = 'assets/images/icons/add.png';
 }

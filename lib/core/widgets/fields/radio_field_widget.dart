@@ -41,8 +41,9 @@ class RadioFieldWidget extends StatelessWidget {
                                   : AppColor.space400,
                         ),
                         SizedBox(width: 10.w),
-                        AppText.bodyMedium(
+                        Txt(
                           radioItem.toString().toReadableEnum(),
+                          tst: TST.bodyMedium,
                           color:
                               selectedRadio == radioItem
                                   ? AppColor.buttonTxt

@@ -32,7 +32,7 @@ class ElevatedButtonWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          AppText.titleSmall(text),
+          Txt(text, tst: TST.titleSmall),
           Dimension.sizedBoxSmallWidth,
           isLoading
               ? CircularLoadingWidget(

@@ -23,7 +23,7 @@ void main() async {
           title: AppConfig.appName,
           initialBinding: AppBindings(),
           initialRoute: AppPages.initial,
-          // getPages: AppPages.routes,
+          getPages: AppPages.routes,
           enableLog: true,
           defaultTransition: Transition.fade,
           locale: TranslationHelper.locale,

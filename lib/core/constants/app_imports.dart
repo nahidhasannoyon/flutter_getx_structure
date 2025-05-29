@@ -24,3 +24,6 @@ export 'dart:async';
 export 'dart:convert';
 
 // Project files
+
+export 'package:flutter_getx_structure/core/utils/enums.dart';
+export 'package:flutter_getx_structure/core/theme/app_theme.dart';

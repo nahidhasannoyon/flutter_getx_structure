@@ -1,205 +1,112 @@
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
-import 'package:flutter_getx_structure/core/theme/app_theme.dart';
 
-class AppText {
-  AppText._();
-  static Text titleLarge(
-    String text, {
-    double? fontSize,
-    Color? color,
-    FontWeight? fontWeight,
-    TextAlign? textAlign,
-    TextOverflow? overflow,
-    double? height,
-    double? letterSpacing,
-    FontStyle? fontStyle,
-    int? maxLines,
-  }) {
+class Txt extends StatelessWidget {
+  final String text;
+  final TST tst;
+  final double? fontSize;
+  final Color? color;
+  final FontWeight? fontWeight;
+  final TextAlign? textAlign;
+  final TextOverflow? overflow;
+  final double? height;
+  final double? letterSpacing;
+  final FontStyle? fontStyle;
+  final int? maxLines;
+  final TextDecoration? decoration;
+  final Color? decorationColor;
+  final double? decorationThickness;
+
+  const Txt(
+    this.text, {
+    super.key,
+    this.tst = TST.bodyMedium,
+    this.fontSize,
+    this.color,
+    this.fontWeight,
+    this.textAlign,
+    this.overflow = TextOverflow.ellipsis,
+    this.height,
+    this.letterSpacing,
+    this.fontStyle,
+    this.maxLines = 1,
+    this.decoration,
+    this.decorationColor,
+    this.decorationThickness,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final baseStyle = getBaseStyle(tst);
     return Text(
       text,
       textAlign: textAlign,
       overflow: overflow,
       maxLines: maxLines,
-      style: AppTheme.currentTheme.textTheme.titleLarge!.copyWith(
+      softWrap: true,
+      style: baseStyle.copyWith(
         fontSize: fontSize,
         color: color,
         fontWeight: fontWeight,
         height: height,
         letterSpacing: letterSpacing,
         fontStyle: fontStyle,
+        decoration: decoration ?? TextDecoration.none,
+        decorationColor: decorationColor,
+        decorationThickness: decorationThickness,
       ),
     );
   }
+}
 
-  static Text titleSmall(
-    String text, {
-    double? fontSize,
-    Color? color,
-    FontWeight? fontWeight,
-    TextAlign? textAlign,
-    TextOverflow? overflow,
-    double? height,
-    double? letterSpacing,
-    FontStyle? fontStyle,
-    int? maxLines,
-  }) {
-    return Text(
-      text,
-      textAlign: textAlign,
-      overflow: overflow,
-      maxLines: maxLines,
-      style: AppTheme.currentTheme.textTheme.titleSmall!.copyWith(
-        fontSize: fontSize,
-        color: color,
-        fontWeight: fontWeight,
-        height: height,
-        letterSpacing: letterSpacing,
-        fontStyle: fontStyle,
-      ),
-    );
-  }
+TextStyle getBaseStyle(TST textStyleType) {
+  final textTheme = AppTheme.currentTheme.textTheme;
+  switch (textStyleType) {
+    case TST.displayLarge:
+      return textTheme.displayLarge ?? const TextStyle();
 
-  static Text bodyLarge(
-    String text, {
-    double? fontSize,
-    Color? color,
-    FontWeight? fontWeight,
-    TextAlign? textAlign,
-    TextOverflow? overflow,
-    double? height,
-    double? letterSpacing,
-    FontStyle? fontStyle,
-    int? maxLines = 5,
-    bool? isUnderline = false,
-  }) {
-    return Text(
-      text,
-      textAlign: textAlign,
-      overflow: overflow,
-      maxLines: maxLines,
-      style: AppTheme.currentTheme.textTheme.bodyLarge!.copyWith(
-        fontSize: fontSize,
-        color: color,
-        fontWeight: fontWeight,
-        height: height,
-        letterSpacing: letterSpacing,
-        fontStyle: fontStyle,
-        decoration: isUnderline == true ? TextDecoration.underline : null,
-        decorationColor: color,
-        decorationThickness: 2.0,
-      ),
-    );
-  }
+    case TST.displayMedium:
+      return textTheme.displayMedium ?? const TextStyle();
 
-  static Text bodyMedium(
-    String text, {
-    double? fontSize,
-    Color? color,
-    FontWeight? fontWeight,
-    TextAlign? textAlign,
-    TextOverflow? overflow,
-    double? height,
-    double? letterSpacing,
-    FontStyle? fontStyle,
-    int? maxLines = 5,
-  }) {
-    return Text(
-      text,
-      textAlign: textAlign,
-      overflow: overflow,
-      maxLines: maxLines,
-      style: AppTheme.currentTheme.textTheme.bodyMedium!.copyWith(
-        fontSize: fontSize,
-        color: color,
-        fontWeight: fontWeight,
-        height: height,
-        letterSpacing: letterSpacing,
-        fontStyle: fontStyle,
-      ),
-    );
-  }
+    case TST.displaySmall:
+      return textTheme.displaySmall ?? const TextStyle();
 
-  static Text bodySmall(
-    String text, {
-    double? fontSize,
-    Color? color,
-    FontWeight? fontWeight,
-    TextAlign? textAlign,
-    TextOverflow? overflow,
-    double? height,
-    double? letterSpacing,
-    FontStyle? fontStyle,
-    int? maxLines = 5,
-  }) {
-    return Text(
-      text,
-      textAlign: textAlign,
-      overflow: overflow,
-      maxLines: maxLines,
-      style: AppTheme.currentTheme.textTheme.bodySmall!.copyWith(
-        fontSize: fontSize,
-        color: color,
-        fontWeight: fontWeight,
-        height: height,
-        letterSpacing: letterSpacing,
-        fontStyle: fontStyle,
-      ),
-    );
-  }
+    case TST.headlineLarge:
+      return textTheme.headlineLarge ?? const TextStyle();
 
-  static Text labelMedium(
-    String text, {
-    double? fontSize,
-    Color? color,
-    FontWeight? fontWeight,
-    TextAlign? textAlign,
-    TextOverflow? overflow,
-    double? height,
-    double? letterSpacing,
-    FontStyle? fontStyle,
-    int? maxLines = 1,
-  }) {
-    return Text(
-      text,
-      textAlign: textAlign,
-      overflow: overflow,
-      maxLines: maxLines,
-      style: AppTheme.currentTheme.textTheme.labelMedium!.copyWith(
-        fontSize: fontSize,
-        color: color,
-        fontWeight: fontWeight,
-        height: height,
-        letterSpacing: letterSpacing,
-        fontStyle: fontStyle,
-      ),
-    );
-  }
+    case TST.headlineMedium:
+      return textTheme.headlineMedium ?? const TextStyle();
 
-  static Text labelSmall(
-    String text, {
-    double? fontSize,
-    Color? color,
-    FontWeight? fontWeight,
-    TextAlign? textAlign,
-    TextOverflow? overflow,
-    double? height,
-    double? letterSpacing,
-    FontStyle? fontStyle,
-    int? maxLines = 1,
-  }) {
-    return Text(
-      text,
-      textAlign: textAlign,
-      overflow: overflow,
-      maxLines: maxLines,
-      style: AppTheme.currentTheme.textTheme.labelSmall!.copyWith(
-        fontSize: fontSize,
-        color: color,
-        fontWeight: fontWeight,
-        height: height,
-        letterSpacing: letterSpacing,
-        fontStyle: fontStyle,
-      ),
-    );
+    case TST.headlineSmall:
+      return textTheme.headlineSmall ?? const TextStyle();
+
+    case TST.titleLarge:
+      return textTheme.titleLarge ?? const TextStyle();
+
+    case TST.titleMedium:
+      return textTheme.titleMedium ?? const TextStyle();
+
+    case TST.titleSmall:
+      return textTheme.titleSmall ?? const TextStyle();
+
+    case TST.bodyLarge:
+      return textTheme.bodyLarge ?? const TextStyle();
+
+    case TST.bodyMedium:
+      return textTheme.bodyMedium ?? const TextStyle();
+
+    case TST.bodySmall:
+      return textTheme.bodySmall ?? const TextStyle();
+
+    case TST.labelLarge:
+      return textTheme.labelLarge ?? const TextStyle();
+
+    case TST.labelMedium:
+      return textTheme.labelMedium ?? const TextStyle();
+
+    case TST.labelSmall:
+      return textTheme.labelSmall ?? const TextStyle();
+
+    case TST.none:
+      return TextStyle();
   }
 }
