@@ -133,8 +133,7 @@ class AppColor {
   /* --------------------------------- Loading -------------------------------- */
   static Color lightLoading = space900;
   static Color darkLoading = white;
-  static Color loading =
-      AppTheme.isDarkMode.value ? darkLoading : lightLoading;
+  static Color loading = AppTheme.isDarkMode.value ? darkLoading : lightLoading;
 
   /* -------------------------------------------------------------------------- */
   /*                                    Card                                    */
