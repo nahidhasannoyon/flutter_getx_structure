@@ -1,28 +1,63 @@
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
 
-class Dimension {
-  Dimension._();
+class AppSizes {
+  AppSizes._();
 
-  // #TODO - Update the design size according to your design file
-
-  static double titleLarge = 24.sp;
-  static double titleMedium = 20.sp;
-  static double titleSmall = 16.sp;
-  static double bodyLarge = 18.sp;
+  /* -------------------------------------------------------------------------- */
+  /*                                 Font Sizes                                 */
+  /* -------------------------------------------------------------------------- */
+  /* --------------------------------- Display -------------------------------- */
+  static double displayLarge = 57.sp;
+  static double displayLargeLineHeight = 64;
+  static double displayMedium = 45.sp;
+  static double displayMediumLineHeight = 52;
+  static double displaySmall = 36.sp;
+  static double displaySmallLineHeight = 44;
+  /* --------------------------------- Headline -------------------------------- */
+  static double headlineLarge = 32.sp;
+  static double headlineLargeLineHeight = 40;
+  static double headlineMedium = 28.sp;
+  static double headlineMediumLineHeight = 36;
+  static double headlineSmall = 24.sp;
+  static double headlineSmallLineHeight = 32;
+  /* ---------------------------------- Title --------------------------------- */
+  static double titleLarge = 22.sp;
+  static double titleLargeLineHeight = 28;
+  static double titleMedium = 16.sp;
+  static double titleMediumLineHeight = 24;
+  static double titleSmall = 14.sp;
+  static double titleSmallLineHeight = 20;
+  /* ---------------------------------- Body ---------------------------------- */
+  static double bodyLarge = 16.sp;
+  static double bodyLargeLineHeight = 24;
   static double bodyMedium = 14.sp;
+  static double bodyMediumLineHeight = 20;
   static double bodySmall = 12.sp;
-  static double labelLarge = 16.sp;
-  static double labelMedium = 14.sp;
-  static double labelSmall = 12.sp;
+  static double bodySmallLineHeight = 16;
+  /* --------------------------------- Label ---------------------------------- */
+  static double labelLarge = 14.sp;
+  static double labelLargeLineHeight = 20;
+  static double labelMedium = 12.sp;
+  static double labelMediumLineHeight = 16;
+  static double labelSmall = 11.sp;
+  static double labelSmallLineHeight = 16;
+
+  /* --------------------------------- Button --------------------------------- */
+  static double buttonText = 16.sp;
+  static double buttonTextLineHeight = 24;
   static double hintText = 12.sp;
+  static double hintTextLineHeight = 16;
 
-  static double btnText = 16.sp;
 
-  static double title24 = 24.sp;
-  static double title18 = 18.sp;
-  static double body16 = 16.sp;
-  static double body14 = 14.sp;
-  static double body12 = 12.sp;
+  
+
+
+
+
+
+
+
+
 
   static const double paddingExtraExtraSmall = 2.0;
   static const double paddingExtraSmall = 5.0;

@@ -1,6 +1,6 @@
 import 'package:flutter_getx_structure/core/constants/app_colors.dart';
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
-import 'package:flutter_getx_structure/core/utils/dimensions.dart';
+import 'package:flutter_getx_structure/core/utils/app_sizes.dart';
 
 // #TODO - update the dark theme data as per your requirements
 /// Light Theme
@@ -26,7 +26,7 @@ ThemeData lightThemeData = ThemeData(
 );
 
 IconThemeData _iconTheme() {
-  return IconThemeData(color: AppColor.lightIcon, size: Dimension.iconDefault);
+  return IconThemeData(color: AppColor.lightIcon, size: AppSizes.iconDefault);
 }
 
 AppBarTheme _appBarTheme() {
@@ -41,7 +41,7 @@ OutlinedButtonThemeData _outlinedButtonTheme() {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.r)),
       side: BorderSide(color: AppColor.lightBorder, width: 1.w),
       textStyle: TextStyle(
-        fontSize: Dimension.btnText,
+        fontSize: AppSizes.buttonText,
         fontWeight: FontWeight.w600,
         height: 0.4.sp,
         letterSpacing: 0,
@@ -56,13 +56,13 @@ OutlinedButtonThemeData _outlinedButtonTheme() {
 InputDecorationTheme _inputDecorationTheme() {
   return InputDecorationTheme(
     floatingLabelStyle: TextStyle(
-      fontSize: Dimension.bodySmall,
+      fontSize: AppSizes.bodySmall,
       color: AppColor.lightLabelTextSmall,
       fontWeight: FontWeight.w700,
       height: 1.4.sp,
     ),
     labelStyle: TextStyle(
-      fontSize: Dimension.labelMedium,
+      fontSize: AppSizes.labelMedium,
       fontWeight: FontWeight.w500,
       height: 1.4.sp,
       letterSpacing: 0,
@@ -98,7 +98,7 @@ ElevatedButtonThemeData _elevatedButtonTheme() {
       padding: EdgeInsets.symmetric(vertical: 17.h),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.r)),
       textStyle: TextStyle(
-        fontSize: Dimension.btnText,
+        fontSize: AppSizes.buttonText,
         fontWeight: FontWeight.w600,
         height: 0.4.sp,
         letterSpacing: 0,
@@ -118,7 +118,7 @@ final TextTheme _lightTextTheme = TextTheme(
   // headlineMedium,
   // headlineSmall,
   titleLarge: TextStyle(
-    fontSize: Dimension.titleLarge, // 24.sp
+    fontSize: AppSizes.titleLarge, // 24.sp
     fontWeight: FontWeight.w700,
     height: 1.4, // 1.3.sp,
     letterSpacing: 0,
@@ -128,7 +128,7 @@ final TextTheme _lightTextTheme = TextTheme(
   ),
   // titleMedium,
   titleSmall: TextStyle(
-    fontSize: Dimension.titleSmall, // 16.sp
+    fontSize: AppSizes.titleSmall, // 16.sp
     fontWeight: FontWeight.w600,
     height: 1.3, // 1.0.sp,
     letterSpacing: 0,
@@ -137,7 +137,7 @@ final TextTheme _lightTextTheme = TextTheme(
     color: AppColor.lightTitleText,
   ),
   bodyLarge: TextStyle(
-    fontSize: Dimension.bodyLarge, // 18.sp
+    fontSize: AppSizes.bodyLarge, // 18.sp
     fontWeight: FontWeight.w500,
     height: 1.6, // 1.8.sp
     letterSpacing: 0,
@@ -146,7 +146,7 @@ final TextTheme _lightTextTheme = TextTheme(
     color: AppColor.lightBodyText,
   ),
   bodyMedium: TextStyle(
-    fontSize: Dimension.bodyMedium, // 14.sp
+    fontSize: AppSizes.bodyMedium, // 14.sp
     fontWeight: FontWeight.w400,
     height: 1.5, // 1.4.sp
     letterSpacing: 0,
@@ -155,7 +155,7 @@ final TextTheme _lightTextTheme = TextTheme(
     color: AppColor.lightBodyText,
   ),
   bodySmall: TextStyle(
-    fontSize: Dimension.bodySmall, // 12.sp
+    fontSize: AppSizes.bodySmall, // 12.sp
     fontWeight: FontWeight.w400,
     height: 1.4, // 1.8.sp
     letterSpacing: 0,
@@ -165,7 +165,7 @@ final TextTheme _lightTextTheme = TextTheme(
   ),
   // labelLarge,
   labelMedium: TextStyle(
-    fontSize: Dimension.labelMedium, // 14.sp
+    fontSize: AppSizes.labelMedium, // 14.sp
     fontWeight: FontWeight.w500,
     height: 1.3, // 0.5.sp
     letterSpacing: 0,
@@ -174,7 +174,7 @@ final TextTheme _lightTextTheme = TextTheme(
     color: AppColor.lightLabelText,
   ),
   labelSmall: TextStyle(
-    fontSize: Dimension.labelSmall, // 12.sp
+    fontSize: AppSizes.labelSmall, // 12.sp
     fontWeight: FontWeight.w700,
     height: 1.2, // 0.2.sp
     letterSpacing: 0,
@@ -187,7 +187,7 @@ final TextTheme _lightTextTheme = TextTheme(
 final TextButtonThemeData _lightTextButtonTheme = TextButtonThemeData(
   style: TextButton.styleFrom(
     textStyle: TextStyle(
-      fontSize: Dimension.bodyMedium,
+      fontSize: AppSizes.bodyMedium,
       fontWeight: FontWeight.w500,
       height: 1.8.sp,
       letterSpacing: 0,
@@ -200,7 +200,7 @@ final TextButtonThemeData _lightTextButtonTheme = TextButtonThemeData(
 
 final IconButtonThemeData _lightIconButtonTheme = IconButtonThemeData(
   style: IconButton.styleFrom(
-    iconSize: Dimension.iconDefault,
+    iconSize: AppSizes.iconDefault,
     foregroundColor: AppColor.lightIcon,
   ),
 );

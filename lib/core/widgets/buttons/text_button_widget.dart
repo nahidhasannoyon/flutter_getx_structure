@@ -1,6 +1,6 @@
 import 'package:flutter_getx_structure/core/constants/app_colors.dart';
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
-import 'package:flutter_getx_structure/core/utils/dimensions.dart';
+import 'package:flutter_getx_structure/core/utils/app_sizes.dart';
 import 'package:flutter_getx_structure/core/widgets/texts/bodies.dart';
 
 class TextButtonWidget extends StatelessWidget {
@@ -28,7 +28,7 @@ class TextButtonWidget extends StatelessWidget {
         onPressed: onPressed,
         child: BodyLarge(
           label,
-          fontSize: fontSize ?? Dimension.btnText,
+          fontSize: fontSize ?? AppSizes.buttonText,
           fontWeight: fontWeight ?? FontWeight.w800,
           color: color ?? AppColor.buttonTxt,
           height: 1.8.sp,

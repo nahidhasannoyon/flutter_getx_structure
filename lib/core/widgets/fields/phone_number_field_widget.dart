@@ -1,6 +1,6 @@
 import 'package:flutter_getx_structure/core/constants/app_colors.dart';
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
-import 'package:flutter_getx_structure/core/utils/dimensions.dart';
+import 'package:flutter_getx_structure/core/utils/app_sizes.dart';
 
 class PhoneNumberFieldWidget extends StatelessWidget {
   final TextEditingController phoneController;
@@ -31,14 +31,14 @@ class PhoneNumberFieldWidget extends StatelessWidget {
           labelText: "Phone Number".tr,
           labelStyle: TextStyle(
             color: AppColor.hintTxt,
-            fontSize: Dimension.body14,
+            fontSize: AppSizes.bodyMedium,
             fontWeight: FontWeight.w500,
           ),
           alignLabelWithHint: true,
           hintText: "XXX XXX XXXX".tr,
           hintStyle: TextStyle(
             color: AppColor.hintTxt,
-            fontSize: Dimension.body14,
+            fontSize: AppSizes.bodyMedium,
             fontWeight: FontWeight.w500,
           ),
           border: OutlineInputBorder(
