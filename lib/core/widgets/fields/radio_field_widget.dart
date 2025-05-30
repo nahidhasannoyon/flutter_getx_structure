@@ -34,7 +34,7 @@ class RadioFieldWidget extends StatelessWidget {
                               : Icons.radio_button_unchecked,
                           color:
                               selectedRadio == radioItem
-                                  ? AppColor.buttonTxt
+                                  ? AppColor.buttonText
                                   : AppColor.space400,
                         ),
                         SizedBox(width: 10.w),
@@ -42,7 +42,7 @@ class RadioFieldWidget extends StatelessWidget {
                           radioItem.toString().toReadableEnum(),
                           color:
                               selectedRadio == radioItem
-                                  ? AppColor.buttonTxt
+                                  ? AppColor.buttonText
                                   : AppColor.space400,
                           fontWeight: FontWeight.w600,
                         ),

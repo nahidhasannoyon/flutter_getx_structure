@@ -27,7 +27,7 @@ class TextButtonWidget extends StatelessWidget {
           label,
           fontSize: fontSize ?? AppSizes.buttonText,
           fontWeight: fontWeight ?? FontWeight.w800,
-          color: color ?? AppColor.buttonTxt,
+          color: color ?? AppColor.buttonText,
           height: 1.8.sp,
           letterSpacing: 0.8.sp,
         ),

@@ -28,24 +28,24 @@ class PhoneNumberFieldWidget extends StatelessWidget {
           floatingLabelAlignment: FloatingLabelAlignment.start,
           labelText: "Phone Number".tr,
           labelStyle: TextStyle(
-            color: AppColor.hintTxt,
+            color: AppColor.hintText,
             fontSize: AppSizes.bodyMedium,
             fontWeight: FontWeight.w500,
           ),
           alignLabelWithHint: true,
           hintText: "XXX XXX XXXX".tr,
           hintStyle: TextStyle(
-            color: AppColor.hintTxt,
+            color: AppColor.hintText,
             fontSize: AppSizes.bodyMedium,
             fontWeight: FontWeight.w500,
           ),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(16.r),
-            borderSide: BorderSide(color: AppColor.normalBorder, width: 1.0),
+            borderSide: BorderSide(color: AppColor.border, width: 1.0),
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(16.r),
-            borderSide: BorderSide(color: AppColor.normalBorder),
+            borderSide: BorderSide(color: AppColor.border),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(16.r),

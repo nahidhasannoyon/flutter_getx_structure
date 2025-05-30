@@ -3,6 +3,7 @@ import 'package:flutter_getx_structure/core/constants/app_imports.dart';
 // #TODO - update the dark theme data as per your requirements
 /// Light Theme
 ThemeData lightThemeData = ThemeData(
+  colorScheme: _lightColorScheme(),
   appBarTheme: _appBarTheme(),
   scaffoldBackgroundColor: AppColor.lightBg,
   textTheme: _lightTextTheme,
@@ -22,6 +23,58 @@ ThemeData lightThemeData = ThemeData(
     ),
   ),
 );
+
+ColorScheme _lightColorScheme() {
+  return ColorScheme.light(
+   brightness: Brightness.light,
+  primary : const Color(0xff6200ee),
+  onPrimary : Colors.white,
+  primaryContainer: Colors.lightGreenAccent,
+  onPrimaryContainer: Colors.lightGreenAccent,
+  primaryFixed: Colors.lightGreenAccent,
+  primaryFixedDim: Colors.lightGreenAccent,
+  onPrimaryFixed: Colors.lightGreenAccent,
+  onPrimaryFixedVariant: Colors.lightGreenAccent,
+  secondary : const Color(0xff03dac6),
+  onSecondary : Colors.black,
+  secondaryContainer: Colors.lightGreenAccent,
+  onSecondaryContainer: Colors.lightGreenAccent,
+  secondaryFixed: Colors.lightGreenAccent,
+  secondaryFixedDim: Colors.lightGreenAccent,
+  onSecondaryFixed: Colors.lightGreenAccent,
+  onSecondaryFixedVariant: Colors.lightGreenAccent,
+  tertiary: Colors.lightGreenAccent,
+  onTertiary: Colors.lightGreenAccent,
+  tertiaryContainer: Colors.lightGreenAccent,
+  onTertiaryContainer: Colors.lightGreenAccent,
+  tertiaryFixed: Colors.lightGreenAccent,
+  tertiaryFixedDim: Colors.lightGreenAccent,
+  onTertiaryFixed: Colors.lightGreenAccent,
+  onTertiaryFixedVariant: Colors.lightGreenAccent,
+  error : const Color(0xffb00020),
+  onError : Colors.white,
+  errorContainer: Colors.lightGreenAccent,
+  onErrorContainer: Colors.lightGreenAccent,
+  surface : Colors.white,
+  onSurface : Colors.black,
+  surfaceDim: Colors.lightGreenAccent,
+  surfaceBright: Colors.lightGreenAccent,
+  surfaceContainerLowest: Colors.lightGreenAccent,
+  surfaceContainerLow: Colors.lightGreenAccent,
+  surfaceContainer: Colors.lightGreenAccent,
+  surfaceContainerHigh: Colors.lightGreenAccent,
+  surfaceContainerHighest: Colors.lightGreenAccent,
+  onSurfaceVariant: Colors.lightGreenAccent,
+  outline: Colors.lightGreenAccent,
+  outlineVariant: Colors.lightGreenAccent,
+  shadow: Colors.lightGreenAccent,
+  scrim: Colors.lightGreenAccent,
+  inverseSurface: Colors.lightGreenAccent,
+  onInverseSurface: Colors.lightGreenAccent,
+  inversePrimary: Colors.lightGreenAccent,
+  surfaceTint: Colors.lightGreenAccent,
+);
+}
 
 IconThemeData _iconTheme() {
   return IconThemeData(color: AppColor.lightIcon, size: AppSizes.iconS);
@@ -55,7 +108,7 @@ InputDecorationTheme _inputDecorationTheme() {
   return InputDecorationTheme(
     floatingLabelStyle: TextStyle(
       fontSize: AppSizes.bodySmall,
-      color: AppColor.lightLabelTextSmall,
+      color: AppColor.lightLabelText,
       fontWeight: FontWeight.w700,
       height: 1.4.sp,
     ),
@@ -108,77 +161,142 @@ ElevatedButtonThemeData _elevatedButtonTheme() {
   );
 }
 
+/* ---------------------------- Light Text Theme ---------------------------- */
 final TextTheme _lightTextTheme = TextTheme(
-  // displayLarge,
-  // displayMedium,
-  // displaySmall,
-  // headlineLarge,
-  // headlineMedium,
-  // headlineSmall,
-  titleLarge: TextStyle(
-    fontSize: AppSizes.titleLarge, // 24.sp
-    fontWeight: FontWeight.w700,
-    height: 1.4, // 1.3.sp,
+  displayLarge: TextStyle(
+    fontSize: AppSizes.displayLarge, // 57
+    fontWeight: FontWeight.w400,
+    height: AppSizes.displayLargeLineHeight / AppSizes.displayLarge,
+    letterSpacing: -0.25,
+    fontStyle: FontStyle.normal,
+    overflow: TextOverflow.ellipsis,
+    color: AppColor.lightDisplayText,
+  ),
+  displayMedium: TextStyle(
+    fontSize: AppSizes.displayMedium, // 45
+    fontWeight: FontWeight.w400,
+    height: AppSizes.displayMediumLineHeight / AppSizes.displayMedium,
+    letterSpacing: 0,
+    fontStyle: FontStyle.normal,
+    overflow: TextOverflow.ellipsis,
+    color: AppColor.lightDisplayText,
+  ),
+  displaySmall: TextStyle(
+    fontSize: AppSizes.displaySmall, // 36
+    fontWeight: FontWeight.w400,
+    height: AppSizes.displaySmallLineHeight / AppSizes.displaySmall,
+    letterSpacing: 0,
+    fontStyle: FontStyle.normal,
+    overflow: TextOverflow.ellipsis,
+    color: AppColor.lightDisplayText,
+  ),
+  headlineLarge: TextStyle(
+    fontSize: AppSizes.headlineLarge, // 32
+    fontWeight: FontWeight.w400,
+    height: AppSizes.headlineLargeLineHeight / AppSizes.headlineLarge,
     letterSpacing: 0,
     fontStyle: FontStyle.normal,
     overflow: TextOverflow.ellipsis,
     color: AppColor.lightTitleText,
   ),
-  // titleMedium,
-  titleSmall: TextStyle(
-    fontSize: AppSizes.titleSmall, // 16.sp
-    fontWeight: FontWeight.w600,
-    height: 1.3, // 1.0.sp,
+  headlineMedium: TextStyle(
+    fontSize: AppSizes.headlineMedium, // 28
+    fontWeight: FontWeight.w400,
+    height: AppSizes.headlineMediumLineHeight / AppSizes.headlineMedium,
+    letterSpacing: 0.15,
+    fontStyle: FontStyle.normal,
+    overflow: TextOverflow.ellipsis,
+    color: AppColor.lightTitleText,
+  ),
+  headlineSmall: TextStyle(
+    fontSize: AppSizes.headlineSmall, // 24
+    fontWeight: FontWeight.w400,
+    height: AppSizes.headlineSmallLineHeight / AppSizes.headlineSmall,
     letterSpacing: 0,
+    fontStyle: FontStyle.normal,
+    overflow: TextOverflow.ellipsis,
+    color: AppColor.lightTitleText,
+  ),
+  titleLarge: TextStyle(
+    fontSize: AppSizes.titleLarge, // 22
+    fontWeight: FontWeight.w700,
+    height: AppSizes.titleLargeLineHeight / AppSizes.titleLarge,
+    letterSpacing: 0,
+    fontStyle: FontStyle.normal,
+    overflow: TextOverflow.ellipsis,
+    color: AppColor.lightTitleText,
+  ),
+  titleMedium: TextStyle(
+    fontSize: AppSizes.titleMedium, // 16
+    fontWeight: FontWeight.w600,
+    height: AppSizes.titleMediumLineHeight / AppSizes.titleMedium,
+    letterSpacing: 0.15,
+    fontStyle: FontStyle.normal,
+    overflow: TextOverflow.ellipsis,
+    color: AppColor.lightTitleText,
+  ),
+  titleSmall: TextStyle(
+    fontSize: AppSizes.titleSmall, // 14
+    fontWeight: FontWeight.w600,
+    height: AppSizes.titleSmallLineHeight / AppSizes.titleSmall,
+    letterSpacing: 0.1,
     fontStyle: FontStyle.normal,
     overflow: TextOverflow.ellipsis,
     color: AppColor.lightTitleText,
   ),
   bodyLarge: TextStyle(
-    fontSize: AppSizes.bodyLarge, // 18.sp
-    fontWeight: FontWeight.w500,
-    height: 1.6, // 1.8.sp
-    letterSpacing: 0,
+    fontSize: AppSizes.bodyLarge, // 16
+    fontWeight: FontWeight.w400,
+    height: AppSizes.bodyLargeLineHeight / AppSizes.bodyLarge,
+    letterSpacing: 0.15,
     fontStyle: FontStyle.normal,
     overflow: TextOverflow.ellipsis,
     color: AppColor.lightBodyText,
   ),
   bodyMedium: TextStyle(
-    fontSize: AppSizes.bodyMedium, // 14.sp
+    fontSize: AppSizes.bodyMedium, // 14
     fontWeight: FontWeight.w400,
-    height: 1.5, // 1.4.sp
-    letterSpacing: 0,
+    height: AppSizes.bodyMediumLineHeight / AppSizes.bodyMedium,
+    letterSpacing: 0.25,
     fontStyle: FontStyle.normal,
     overflow: TextOverflow.ellipsis,
     color: AppColor.lightBodyText,
   ),
   bodySmall: TextStyle(
-    fontSize: AppSizes.bodySmall, // 12.sp
+    fontSize: AppSizes.bodySmall, // 12
     fontWeight: FontWeight.w400,
-    height: 1.4, // 1.8.sp
-    letterSpacing: 0,
+    height: AppSizes.bodySmallLineHeight / AppSizes.bodySmall,
+    letterSpacing: 0.4,
     fontStyle: FontStyle.normal,
     overflow: TextOverflow.ellipsis,
-    color: AppColor.lightBodyText, // might need to change this color
+    color: AppColor.lightBodyText,
   ),
-  // labelLarge,
-  labelMedium: TextStyle(
-    fontSize: AppSizes.labelMedium, // 14.sp
-    fontWeight: FontWeight.w500,
-    height: 1.3, // 0.5.sp
-    letterSpacing: 0,
+  labelLarge: TextStyle(
+    fontSize: AppSizes.labelLarge, // 14
+    fontWeight: FontWeight.w600,
+    height: AppSizes.labelLargeLineHeight / AppSizes.labelLarge,
+    letterSpacing: 0.1,
     fontStyle: FontStyle.normal,
     overflow: TextOverflow.ellipsis,
-    color: AppColor.lightLabelText,
+    color: AppColor.lightBodyText,
+  ),
+  labelMedium: TextStyle(
+    fontSize: AppSizes.labelMedium, // 12
+    fontWeight: FontWeight.w500,
+    height: AppSizes.labelMediumLineHeight / AppSizes.labelMedium,
+    letterSpacing: 0.5,
+    fontStyle: FontStyle.normal,
+    overflow: TextOverflow.ellipsis,
+    color: AppColor.lightBodyText,
   ),
   labelSmall: TextStyle(
-    fontSize: AppSizes.labelSmall, // 12.sp
-    fontWeight: FontWeight.w700,
-    height: 1.2, // 0.2.sp
-    letterSpacing: 0,
+    fontSize: AppSizes.labelSmall, // 11
+    fontWeight: FontWeight.w500,
+    height: AppSizes.labelSmallLineHeight / AppSizes.labelSmall,
+    letterSpacing: 0.5,
     fontStyle: FontStyle.normal,
     overflow: TextOverflow.ellipsis,
-    color: AppColor.lightLabelTextSmall,
+    color: AppColor.lightBodyText,
   ),
 );
 

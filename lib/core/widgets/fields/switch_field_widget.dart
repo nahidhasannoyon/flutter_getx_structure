@@ -21,7 +21,7 @@ class SwitchFieldWidget extends StatelessWidget {
 
       padding: EdgeInsets.symmetric(horizontal: 16.w),
       decoration: BoxDecoration(
-        border: Border.all(color: AppColor.normalBorder),
+        border: Border.all(color: AppColor.border),
         borderRadius: BorderRadius.circular(16.r),
       ),
       child: Card(

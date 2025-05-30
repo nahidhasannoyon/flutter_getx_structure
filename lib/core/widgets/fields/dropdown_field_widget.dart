@@ -58,7 +58,7 @@ class DropdownFieldWidget<T> extends StatelessWidget {
               hint!.isEmpty ? label : hint!,
               style: AppTheme.currentTheme.textTheme.bodyMedium!.copyWith(
                 fontWeight: FontWeight.w600,
-                color: AppColor.titleTxt,
+                color: AppColor.titleText,
               ),
             ),
             value: value,
@@ -67,7 +67,7 @@ class DropdownFieldWidget<T> extends StatelessWidget {
             icon: const SizedBox.shrink(),
             style: AppTheme.currentTheme.textTheme.bodyMedium!.copyWith(
               fontWeight: FontWeight.w600,
-              color: AppColor.titleTxt,
+              color: AppColor.titleText,
             ),
             items: items,
           ),

@@ -3,86 +3,182 @@ import 'package:flutter_getx_structure/core/constants/app_imports.dart';
 class AppColor {
   AppColor._();
 
-  // #TODO - Update the colors as per your design requirements
-
+  /* -------------------------------------------------------------------------- */
+  /*                                 Background                                 */
+  /* -------------------------------------------------------------------------- */
+  /* ---------------------------------- bg ---------------------------------- */
   static const Color lightBg = white;
+  static const Color darkBg = black;
+  static Color bg = AppTheme.isDarkMode.value ? darkBg : lightBg;
+  /* ------------------------------- App Bar Bg ------------------------------- */
   static const Color lightAppBarBg = white;
-
-  static const Color lightIcon = space900;
-  static const Color lightErrorIcon = error500;
-
-  static const Color bgColor = white;
-  static const Color button = brand500;
-
-  static const Color lightButtonBg = brand500;
-
-  /* ---------------------------------- text ---------------------------------- */
-  static Color lightTitleText = space900;
-  static Color lightBodyText = space400;
-  static Color lightHintText = space200;
-  static Color lightErrorTileText = error500;
-  static Color lightErrorBodyText = error900;
+  static const Color darkAppBarBg = black;
+  static Color appBarBg =
+      AppTheme.isDarkMode.value ? darkAppBarBg : lightAppBarBg;
+  /* -------------------------------- Error Bg -------------------------------- */
   static Color lightErrorBg = error50;
+  static Color darkErrorBg = error900;
+  static Color errorBg = AppTheme.isDarkMode.value ? darkErrorBg : lightErrorBg;
 
+  /* ---------------------------------- Icon ---------------------------------- */
+  static const Color lightIcon = space900;
+  static const Color darkIcon = white;
+  static Color icon = AppTheme.isDarkMode.value ? darkIcon : lightIcon;
+  static const Color lightErrorIcon = error500;
+  static const Color darkErrorIcon = error900;
+  static Color errorIcon =
+      AppTheme.isDarkMode.value ? darkErrorIcon : lightErrorIcon;
+
+  /* -------------------------------------------------------------------------- */
+  /*                                    Text                                    */
+  /* -------------------------------------------------------------------------- */
+  /* --------------------------------- Display -------------------------------- */
+  static const Color lightDisplayText = space900;
+  static const Color darkDisplayText = white;
+  static Color displayText =
+      AppTheme.isDarkMode.value ? darkDisplayText : lightDisplayText;
+  /* -------------------------------- Headline -------------------------------- */
+  static const Color lightHeadlineText = space900;
+  static const Color darkHeadlineText = white;
+  static Color headlineText =
+      AppTheme.isDarkMode.value ? darkHeadlineText : lightHeadlineText;
+  /* ---------------------------------- Title --------------------------------- */
+  static const Color lightTitleText = space900;
+  static const Color darkTitleText = white;
+  static Color titleText =
+      AppTheme.isDarkMode.value ? darkTitleText : lightTitleText;
+  /* ---------------------------------- Body ---------------------------------- */
+  static const Color lightBodyText = space400;
+  static const Color darkBodyText = white;
+  static Color bodyText =
+      AppTheme.isDarkMode.value ? darkBodyText : lightBodyText;
+  /* ---------------------------------- Label --------------------------------- */
+  static const Color lightLabelText = space200;
+  static const Color darkLabelText = white;
+  static Color labelText =
+      AppTheme.isDarkMode.value ? darkLabelText : lightLabelText;
+  /* ---------------------------------- Hint ---------------------------------- */
+  static const Color lightHintText = space200;
+  static const Color darkHintText = white;
+  static Color hintText =
+      AppTheme.isDarkMode.value ? darkHintText : lightHintText;
+  /* ---------------------------------- Error --------------------------------- */
+  static const Color lightErrorTileText = error500;
+  static const Color darkErrorTileText = error900;
   static Color errorTileText =
-      AppTheme.isDarkMode.value ? Colors.green : lightErrorTileText;
+      AppTheme.isDarkMode.value ? darkErrorTileText : lightErrorTileText;
+  static const Color lightErrorBodyText = error900;
+  static const Color darkErrorBodyText = error50;
   static Color errorBodyText =
-      AppTheme.isDarkMode.value ? Colors.green : lightErrorBodyText;
-  static Color errorBg =
-      AppTheme.isDarkMode.value ? Colors.green : lightErrorBg;
+      AppTheme.isDarkMode.value ? darkErrorBodyText : lightErrorBodyText;
+  /* --------------------------------- Button --------------------------------- */
+  static const Color lightButtonText = space900;
+  static const Color darkButtonText = white;
+  static Color buttonText =
+      AppTheme.isDarkMode.value ? darkButtonText : lightButtonText;
 
-  static Color lightLoading = space900;
-  static Color loading =
-      AppTheme.isDarkMode.value ? Colors.green : lightLoading;
-
-  static Color lightButtonText = space900;
-  static Color lightLabelText = space200;
-  static Color lightLabelTextSmall = space300;
-
-  static const Color lightCardBg = grey50;
-  static const Color lightCardBorder = transparent;
-  static const Color lightSelectedCardBg = brand100;
-  static const Color lightSelectedCardBorder = brand600;
-
-  static Color cardBg = AppTheme.isDarkMode.value ? green : lightCardBg;
-  static Color cardBorder = AppTheme.isDarkMode.value ? green : lightCardBorder;
-  static Color selectedCardBg =
-      AppTheme.isDarkMode.value ? green : lightSelectedCardBg;
-  static Color selectedCardBorder =
-      AppTheme.isDarkMode.value ? green : lightSelectedCardBorder;
-
-  static const Color lightDivider = black;
-
-  static const Color lightSelectedTabBar = black;
-  static const Color lightUnselectedTabBar = grey100;
-
-  static Color selectedTabBar =
-      AppTheme.isDarkMode.value ? green : lightSelectedTabBar;
-  static Color unselectedTabBar =
-      AppTheme.isDarkMode.value ? green : lightUnselectedTabBar;
-
-  static const Color lightSelectedTabText = white;
-  static const Color lightUnselectedTabText = space400;
-
-  static Color selectedTabText =
-      AppTheme.isDarkMode.value ? green : lightSelectedTabText;
-  static Color unselectedTabText =
-      AppTheme.isDarkMode.value ? green : lightUnselectedTabText;
-
-  static const Color reminderTodayCard = green50;
-  static const Color reminderUpcomingCard = yellow50;
-  static const Color reminderExpiredCard = error50;
-
-  static const Color titleTxt = space900;
-  static const Color bodyTxt = space400;
-  static const Color buttonTxt = space900;
-  static const Color hintTxt = space200;
-
-  static const Color icon = space900;
-
+  /* -------------------------------------------------------------------------- */
+  /*                                   Borders                                  */
+  /* -------------------------------------------------------------------------- */
+  /* --------------------------------- Border --------------------------------- */
   static const Color lightBorder = grey300;
-  static const Color normalBorder = grey300;
-  static const Color focusedBorder = space900;
+  static const Color darkBorder = space900;
+  static Color border = AppTheme.isDarkMode.value ? darkBorder : lightBorder;
+  /* ----------------------------- Enabled Border ----------------------------- */
+  static const Color lightEnabledBorder = grey300;
+  static const Color darkEnabledBorder = space900;
+  static Color enabledBorder =
+      AppTheme.isDarkMode.value ? darkEnabledBorder : lightEnabledBorder;
+  /* ------------------------------ Error Border ------------------------------ */
+  static const Color lightErrorBorder = error500;
+  static const Color darkErrorBorder = error900;
+  static Color errorBorder =
+      AppTheme.isDarkMode.value ? darkErrorBorder : lightErrorBorder;
+  /* ----------------------------- Focused Border ----------------------------- */
+  static const Color lightFocusedBorder = space900;
+  static const Color darkFocusedBorder = white;
+  static Color focusedBorder =
+      AppTheme.isDarkMode.value ? darkFocusedBorder : lightFocusedBorder;
+  /* ----------------------------- Disabled Border ---------------------------- */
+  static const Color lightDisabledBorder = grey200;
+  static const Color darkDisabledBorder = space600;
+  static Color disabledBorder =
+      AppTheme.isDarkMode.value ? darkDisabledBorder : lightDisabledBorder;
+  /* ----------------------------- Focused Error Border ----------------------- */
+  static const Color lightFocusedErrorBorder = error500;
+  static const Color darkFocusedErrorBorder = error900;
+  static Color focusedErrorBorder =
+      AppTheme.isDarkMode.value
+          ? darkFocusedErrorBorder
+          : lightFocusedErrorBorder;
+
+  /* -------------------------------------------------------------------------- */
+  /*                                   Button                                   */
+  /* -------------------------------------------------------------------------- */
+  /* ---------------------------------- Button -------------------------------- */
+  static const Color lightButton = brand500;
+  static const Color darkButton = brand500;
+  static Color button = AppTheme.isDarkMode.value ? darkButton : lightButton;
+  /* ------------------------------- Button Bg ------------------------------- */
+  static const Color lightButtonBg = brand500;
+  static const Color darkButtonBg = brand500;
+  static Color buttonBg =
+      AppTheme.isDarkMode.value ? darkButtonBg : lightButtonBg;
+  /* ----------------------------- Button Border ----------------------------- */
+  static const Color lightButtonBorder = brand500;
+  static const Color darkButtonBorder = brand500;
+  static Color buttonBorder =
+      AppTheme.isDarkMode.value ? darkButtonBorder : lightButtonBorder;
+
+  /* --------------------------------- Loading -------------------------------- */
+  static Color lightLoading = space900;
+  static Color darkLoading = white;
+  static Color loading =
+      AppTheme.isDarkMode.value ? darkLoading : lightLoading;
+
+  /* -------------------------------------------------------------------------- */
+  /*                                    Card                                    */
+  /* -------------------------------------------------------------------------- */
+  /* --------------------------------- Card Bg -------------------------------- */
+  static const Color lightCardBg = grey50;
+  static const Color darkCardBg = space900;
+  static Color cardBg = AppTheme.isDarkMode.value ? darkCardBg : lightCardBg;
+  /* ------------------------------- Card Border ------------------------------ */
+  static const Color lightCardBorder = grey300;
+  static const Color darkCardBorder = space900;
+  static Color cardBorder =
+      AppTheme.isDarkMode.value ? darkCardBorder : lightCardBorder;
+
+  /* --------------------------------- Divider -------------------------------- */
+  static const Color lightDivider = black;
+  static const Color darkDivider = white;
+  static Color divider = AppTheme.isDarkMode.value ? darkDivider : lightDivider;
+
+  /* -------------------------------------------------------------------------- */
+  /*                                   Tab Bar                                  */
+  /* -------------------------------------------------------------------------- */
+  /* ---------------------------- Selected Tab Bar ---------------------------- */
+  static const Color lightSelectedTabBar = black;
+  static const Color darkSelectedTabBar = white;
+  static Color selectedTabBar =
+      AppTheme.isDarkMode.value ? darkSelectedTabBar : lightSelectedTabBar;
+  /* ---------------------------- Unselected Tab Bar -------------------------- */
+  static const Color lightUnselectedTabBar = grey100;
+  static const Color darkUnselectedTabBar = space600;
+  static Color unselectedTabBar =
+      AppTheme.isDarkMode.value ? darkUnselectedTabBar : lightUnselectedTabBar;
+  /* ------------------------------ Selected Tab Text -------------------------- */
+  static const Color lightSelectedTabText = white;
+  static const Color darkSelectedTabText = black;
+  static Color selectedTabText =
+      AppTheme.isDarkMode.value ? darkSelectedTabText : lightSelectedTabText;
+  /* ----------------------------- Unselected Tab Text ------------------------- */
+  static const Color lightUnselectedTabText = space400;
+  static const Color darkUnselectedTabText = space200;
+  static Color unselectedTabText =
+      AppTheme.isDarkMode.value
+          ? darkUnselectedTabText
+          : lightUnselectedTabText;
 
   /* ------------------------------ Common Colors ------------------------------ */
   static const Color white = Color(0xffffffff);
