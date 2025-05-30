@@ -58,44 +58,44 @@ class AppSizes {
   static double radius(double val) => val.r;
 
   // XXS
-  static double get xxsW => width(2);
-  static double get xxsH => height(2);
-  static double get xxsR => radius(2);
+  static final double xxsW = width(2);
+  static final double xxsH = height(2);
+  static final double xxsR = radius(2);
 
   // XS
-  static double get xsW => width(4);
-  static double get xsH => height(4);
-  static double get xsR => radius(4);
+  static final double xsW = width(4);
+  static final double xsH = height(4);
+  static final double xsR = radius(4);
 
   // S
-  static double get sW => width(8);
-  static double get sH => height(8);
-  static double get sR => radius(8);
+  static final double sW = width(8);
+  static final double sH = height(8);
+  static final double sR = radius(8);
 
   // M
-  static double get mW => width(12);
-  static double get mH => height(12);
-  static double get mR => radius(12);
+  static final double mW = width(12);
+  static final double mH = height(12);
+  static final double mR = radius(12);
 
   // L
-  static double get lW => width(16);
-  static double get lH => height(16);
-  static double get lR => radius(16);
+  static final double lW = width(16);
+  static final double lH = height(16);
+  static final double lR = radius(16);
 
   // XL
-  static double get xlW => width(24);
-  static double get xlH => height(24);
-  static double get xlR => radius(24);
+  static final double xlW = width(24);
+  static final double xlH = height(24);
+  static final double xlR = radius(24);
 
   // XXL
-  static double get xxlW => width(32);
-  static double get xxlH => height(32);
-  static double get xxlR => radius(32);
+  static final double xxlW = width(32);
+  static final double xxlH = height(32);
+  static final double xxlR = radius(32);
 
   // XXXL
-  static double get xxxlW => width(40);
-  static double get xxxlH => height(40);
-  static double get xxxlR => radius(40);
+  static final double xxxlW = width(40);
+  static final double xxxlH = height(40);
+  static final double xxxlR = radius(40);
 
   /* ---------------------------------- Icons --------------------------------- */
   static final double iconXxs = 12.0.sp;
@@ -107,11 +107,23 @@ class AppSizes {
   static final double iconXxl = 56.0.sp;
   static final double iconXxxl = 64.0.sp;
 
-  /* ------------------------------------ x ----------------------------------- */
+  /* --------------------------------- Border --------------------------------- */
+  static final double borderXxs = 1.0.w;
+  static final double borderXs = 2.0.w;
+  static final double borderS = 3.0.w;
+  static final double borderM = 4.0.w;
+  static final double borderL = 5.0.w;
+  static final double borderXl = 6.0.w;
+  static final double borderXxl = 8.0.w;
+  static final double borderXxxl = 10.0.w;
 
-  // border
-  static const double borderWidthExtraSmall = 0.5;
-  static const double borderWidthSmall = 1.0;
-  static const double borderWidthDefault = 2.0;
-  static const double borderWidthLarge = 3.0;
+  /* ------------------------------ Border Radius ----------------------------- */
+  static final double radiusXxs = 2.0.r;
+  static final double radiusXs = 4.0.r;
+  static final double radiusS = 8.0.r;
+  static final double radiusM = 12.0.r;
+  static final double radiusL = 16.0.r;
+  static final double radiusXl = 20.0.r;
+  static final double radiusXxl = 24.0.r;
+  static final double radiusXxxl = 32.0.r;
 }

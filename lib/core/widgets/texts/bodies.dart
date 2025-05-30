@@ -1,4 +1,3 @@
-
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
 
 class BodyLarge extends StatelessWidget {
@@ -57,7 +56,6 @@ class BodyLarge extends StatelessWidget {
   }
 }
 
-
 class BodyMedium extends StatelessWidget {
   final String text;
   final double? fontSize;
@@ -113,7 +111,6 @@ class BodyMedium extends StatelessWidget {
     );
   }
 }
-
 
 class BodySmall extends StatelessWidget {
   final String text;

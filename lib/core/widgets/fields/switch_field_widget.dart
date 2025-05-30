@@ -19,12 +19,11 @@ class SwitchFieldWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 56.h,
-      
+
       padding: EdgeInsets.symmetric(horizontal: 16.w),
       decoration: BoxDecoration(
         border: Border.all(color: AppColor.normalBorder),
         borderRadius: BorderRadius.circular(16.r),
-      
       ),
       child: Card(
         child: Row(

@@ -27,3 +27,4 @@ export 'dart:convert';
 
 export 'package:flutter_getx_structure/core/utils/enums.dart';
 export 'package:flutter_getx_structure/core/theme/app_theme.dart';
+export 'package:flutter_getx_structure/core/utils/app_sizes.dart';
