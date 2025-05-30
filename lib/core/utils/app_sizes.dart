@@ -97,32 +97,21 @@ class AppSizes {
   static double get xxxlH => height(40);
   static double get xxxlR => radius(40);
 
+  /* ---------------------------------- Icons --------------------------------- */
+  static final double iconXxs = 12.0.sp;
+  static final double iconXs = 16.0.sp;
+  static final double iconS = 24.0.sp;
+  static final double iconM = 32.0.sp;
+  static final double iconL = 40.0.sp;
+  static final double iconXl = 48.0.sp;
+  static final double iconXxl = 56.0.sp;
+  static final double iconXxxl = 64.0.sp;
+
   /* ------------------------------------ x ----------------------------------- */
-
-  static const double iconExtraSmall = 12.0;
-  static const double iconSmall = 18.0;
-  static double iconDefault = 24.0.sp;
-  static const double iconLarge = 32.0;
-  static const double iconExtraLarge = 50.0;
-
-  // image size
-  static const double imageExtraSmall = 20.0;
-  static const double imageSmall = 30.0;
-  static const double imageDefault = 40.0;
-  static const double imageLarge = 50.0;
-  static const double imageExtraLarge = 60.0;
-  static const double imageExtraSeventy = 70.0;
-  static const double bannerPadding = 40.0;
 
   // border
   static const double borderWidthExtraSmall = 0.5;
   static const double borderWidthSmall = 1.0;
   static const double borderWidthDefault = 2.0;
   static const double borderWidthLarge = 3.0;
-
-  // elevation
-  static const double elevation = 5.0;
-  static const double elevationSmall = 2.0;
-  static const double elevationLarge = 10.0;
-  static const double elevationExtraLarge = 15.0;
 }

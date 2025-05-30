@@ -19,43 +19,47 @@ class SwitchFieldWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 56.h,
+      
       padding: EdgeInsets.symmetric(horizontal: 16.w),
       decoration: BoxDecoration(
         border: Border.all(color: AppColor.normalBorder),
         borderRadius: BorderRadius.circular(16.r),
+      
       ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Row(
-            children: [
-              if (prefixIcon != null)
-                Padding(
-                  padding: EdgeInsets.only(right: 10.w),
-                  child: Icon(prefixIcon),
+      child: Card(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Row(
+              children: [
+                if (prefixIcon != null)
+                  Padding(
+                    padding: EdgeInsets.only(right: 10.w),
+                    child: Icon(prefixIcon),
+                  ),
+                Text(
+                  label,
+                  style: AppTheme.currentTheme.textTheme.bodyMedium!.copyWith(
+                    color: AppColor.lightTitleText,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
-              Text(
-                label,
-                style: AppTheme.currentTheme.textTheme.bodyMedium!.copyWith(
-                  color: AppColor.lightTitleText,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-            ],
-          ),
-          Transform.scale(
-            scale: 0.6,
-            child: Switch(
-              value: value,
-              onChanged: onChanged,
-              inactiveThumbColor: AppColor.black,
-              inactiveTrackColor: AppColor.transparent,
-              activeColor: AppColor.white,
-              activeTrackColor: AppColor.black,
-              trackOutlineColor: WidgetStateProperty.all(AppColor.black),
+              ],
             ),
-          ),
-        ],
+            Transform.scale(
+              scale: 0.6,
+              child: Switch(
+                value: value,
+                onChanged: onChanged,
+                inactiveThumbColor: AppColor.black,
+                inactiveTrackColor: AppColor.transparent,
+                activeColor: AppColor.white,
+                activeTrackColor: AppColor.black,
+                trackOutlineColor: WidgetStateProperty.all(AppColor.black),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

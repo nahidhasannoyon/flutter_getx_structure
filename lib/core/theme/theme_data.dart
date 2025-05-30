@@ -26,7 +26,7 @@ ThemeData lightThemeData = ThemeData(
 );
 
 IconThemeData _iconTheme() {
-  return IconThemeData(color: AppColor.lightIcon, size: AppSizes.iconDefault);
+  return IconThemeData(color: AppColor.lightIcon, size: AppSizes.iconS);
 }
 
 AppBarTheme _appBarTheme() {
@@ -200,7 +200,7 @@ final TextButtonThemeData _lightTextButtonTheme = TextButtonThemeData(
 
 final IconButtonThemeData _lightIconButtonTheme = IconButtonThemeData(
   style: IconButton.styleFrom(
-    iconSize: AppSizes.iconDefault,
+    iconSize: AppSizes.iconS,
     foregroundColor: AppColor.lightIcon,
   ),
 );
