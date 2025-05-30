@@ -1,7 +1,4 @@
-import 'package:flutter_getx_structure/core/constants/app_colors.dart';
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
-import 'package:flutter_getx_structure/core/extensions/string_extensions.dart';
-import 'package:flutter_getx_structure/core/widgets/texts/bodies.dart';
 
 class RadioFieldWidget extends StatelessWidget {
   const RadioFieldWidget({

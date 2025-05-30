@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter_getx_structure/core/constants/app_imports.dart';
 
 class AssetImageWidget extends StatelessWidget {
   const AssetImageWidget({

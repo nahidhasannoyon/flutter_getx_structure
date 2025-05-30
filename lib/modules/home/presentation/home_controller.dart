@@ -1,4 +1,4 @@
-import 'package:get/get.dart';
+import 'package:flutter_getx_structure/core/constants/app_imports.dart';
 
 class HomeController extends GetxController {
   @override

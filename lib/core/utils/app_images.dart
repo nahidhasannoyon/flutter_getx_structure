@@ -1,6 +1,6 @@
-// cSpell:disable
+import 'package:flutter_getx_structure/core/constants/app_imports.dart';
 
-import 'package:flutter_getx_structure/core/theme/app_theme.dart';
+// cSpell:disable
 
 class AppImage {
   AppImage._();

@@ -1,4 +1,4 @@
-import 'package:flutter_getx_structure/routes/home_routes.dart';
+import 'package:flutter_getx_structure/core/constants/app_imports.dart';
 
 class AppPages {
   AppPages._();

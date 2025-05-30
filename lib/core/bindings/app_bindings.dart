@@ -1,4 +1,4 @@
-import 'package:get/get_instance/src/bindings_interface.dart';
+import 'package:flutter_getx_structure/core/constants/app_imports.dart';
 
 class AppBindings extends Bindings {
   @override

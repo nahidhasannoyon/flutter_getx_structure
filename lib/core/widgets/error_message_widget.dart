@@ -1,7 +1,4 @@
-import 'package:flutter_getx_structure/core/constants/app_colors.dart';
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
-import 'package:flutter_getx_structure/core/widgets/texts/bodies.dart';
-import 'package:flutter_getx_structure/core/widgets/texts/titles.dart';
 
 class ErrorMessageWidget extends StatelessWidget {
   final String errorTitle;

@@ -1,6 +1,4 @@
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
-import 'package:flutter_getx_structure/core/constants/app_strings.dart';
-import 'package:flutter_getx_structure/core/theme/theme_data.dart';
 
 class AppTheme {
   static final GetStorage _storage = GetStorage();

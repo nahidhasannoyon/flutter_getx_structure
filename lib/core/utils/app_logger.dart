@@ -1,6 +1,6 @@
-import 'dart:developer' as developer;
+import 'package:flutter_getx_structure/core/constants/app_imports.dart';
 
-import 'package:flutter_getx_structure/core/config/app_config.dart';
+import 'dart:developer' as developer;
 
 class AppLogger {
   void localLogWriter(String text, {bool isError = false}) {

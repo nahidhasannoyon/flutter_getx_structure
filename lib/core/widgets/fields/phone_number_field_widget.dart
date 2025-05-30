@@ -1,6 +1,4 @@
-import 'package:flutter_getx_structure/core/constants/app_colors.dart';
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
-import 'package:flutter_getx_structure/core/utils/app_sizes.dart';
 
 class PhoneNumberFieldWidget extends StatelessWidget {
   final TextEditingController phoneController;

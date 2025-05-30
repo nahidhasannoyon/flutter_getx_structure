@@ -1,8 +1,4 @@
-import 'package:flutter_getx_structure/core/constants/app_colors.dart';
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
-import 'package:flutter_getx_structure/core/utils/app_spacing.dart';
-import 'package:flutter_getx_structure/core/widgets/loadings/circular_loading_widget.dart';
-import 'package:flutter_getx_structure/core/widgets/texts/titles.dart';
 
 class ElevatedButtonWidget extends StatelessWidget {
   final VoidCallback? onPressed;

@@ -1,4 +1,3 @@
-import 'package:flutter_getx_structure/core/constants/app_colors.dart';
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
 
 class SwitchFieldWidget extends StatelessWidget {

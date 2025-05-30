@@ -1,5 +1,4 @@
-import 'package:flutter_getx_structure/core/utils/app_images.dart';
-import 'package:flutter_getx_structure/data/models/language_model.dart';
+import 'package:flutter_getx_structure/core/constants/app_imports.dart';
 
 class AppConstants {
   static List<LanguageModel> languages = [

@@ -1,6 +1,4 @@
-import 'package:flutter_getx_structure/core/constants/app_constants.dart';
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
-import 'package:flutter_getx_structure/core/constants/app_strings.dart';
 
 class TranslationHelper extends Translations {
   static final GetStorage _storage = GetStorage();
