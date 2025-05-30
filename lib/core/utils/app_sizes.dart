@@ -7,80 +7,97 @@ class AppSizes {
   /*                                 Font Sizes                                 */
   /* -------------------------------------------------------------------------- */
   /* --------------------------------- Display -------------------------------- */
-  static double displayLarge = 57.sp;
-  static double displayLargeLineHeight = 64;
-  static double displayMedium = 45.sp;
-  static double displayMediumLineHeight = 52;
-  static double displaySmall = 36.sp;
-  static double displaySmallLineHeight = 44;
+  static final double displayLarge = 57.sp;
+  static final double displayLargeLineHeight = 64;
+  static final double displayMedium = 45.sp;
+  static final double displayMediumLineHeight = 52;
+  static final double displaySmall = 36.sp;
+  static final double displaySmallLineHeight = 44;
   /* --------------------------------- Headline -------------------------------- */
-  static double headlineLarge = 32.sp;
-  static double headlineLargeLineHeight = 40;
-  static double headlineMedium = 28.sp;
-  static double headlineMediumLineHeight = 36;
-  static double headlineSmall = 24.sp;
-  static double headlineSmallLineHeight = 32;
+  static final double headlineLarge = 32.sp;
+  static final double headlineLargeLineHeight = 40;
+  static final double headlineMedium = 28.sp;
+  static final double headlineMediumLineHeight = 36;
+  static final double headlineSmall = 24.sp;
+  static final double headlineSmallLineHeight = 32;
   /* ---------------------------------- Title --------------------------------- */
-  static double titleLarge = 22.sp;
-  static double titleLargeLineHeight = 28;
-  static double titleMedium = 16.sp;
-  static double titleMediumLineHeight = 24;
-  static double titleSmall = 14.sp;
-  static double titleSmallLineHeight = 20;
+  static final double titleLarge = 22.sp;
+  static final double titleLargeLineHeight = 28;
+  static final double titleMedium = 16.sp;
+  static final double titleMediumLineHeight = 24;
+  static final double titleSmall = 14.sp;
+  static final double titleSmallLineHeight = 20;
   /* ---------------------------------- Body ---------------------------------- */
-  static double bodyLarge = 16.sp;
-  static double bodyLargeLineHeight = 24;
-  static double bodyMedium = 14.sp;
-  static double bodyMediumLineHeight = 20;
-  static double bodySmall = 12.sp;
-  static double bodySmallLineHeight = 16;
+  static final double bodyLarge = 16.sp;
+  static final double bodyLargeLineHeight = 24;
+  static final double bodyMedium = 14.sp;
+  static final double bodyMediumLineHeight = 20;
+  static final double bodySmall = 12.sp;
+  static final double bodySmallLineHeight = 16;
   /* --------------------------------- Label ---------------------------------- */
-  static double labelLarge = 14.sp;
-  static double labelLargeLineHeight = 20;
-  static double labelMedium = 12.sp;
-  static double labelMediumLineHeight = 16;
-  static double labelSmall = 11.sp;
-  static double labelSmallLineHeight = 16;
+  static final double labelLarge = 14.sp;
+  static final double labelLargeLineHeight = 20;
+  static final double labelMedium = 12.sp;
+  static final double labelMediumLineHeight = 16;
+  static final double labelSmall = 11.sp;
+  static final double labelSmallLineHeight = 16;
 
   /* --------------------------------- Button --------------------------------- */
-  static double buttonText = 16.sp;
-  static double buttonTextLineHeight = 24;
-  static double hintText = 12.sp;
-  static double hintTextLineHeight = 16;
+  static final double buttonText = 16.sp;
+  static final double buttonTextLineHeight = 24;
 
+  /* --------------------------------- Hint Text ------------------------------- */
+  static final double hintText = 12.sp;
+  static final double hintTextLineHeight = 16;
 
-  
+  /* -------------------------------------------------------------------------- */
+  /*                                 Sizes                                      */
+  /* -------------------------------------------------------------------------- */
+  static double width(double val) => val.w;
+  static double height(double val) => val.h;
+  static double radius(double val) => val.r;
 
+  // XXS
+  static double get xxsW => width(2);
+  static double get xxsH => height(2);
+  static double get xxsR => radius(2);
 
+  // XS
+  static double get xsW => width(4);
+  static double get xsH => height(4);
+  static double get xsR => radius(4);
 
+  // S
+  static double get sW => width(8);
+  static double get sH => height(8);
+  static double get sR => radius(8);
 
+  // M
+  static double get mW => width(12);
+  static double get mH => height(12);
+  static double get mR => radius(12);
 
+  // L
+  static double get lW => width(16);
+  static double get lH => height(16);
+  static double get lR => radius(16);
 
+  // XL
+  static double get xlW => width(24);
+  static double get xlH => height(24);
+  static double get xlR => radius(24);
 
+  // XXL
+  static double get xxlW => width(32);
+  static double get xxlH => height(32);
+  static double get xxlR => radius(32);
 
+  // XXXL
+  static double get xxxlW => width(40);
+  static double get xxxlH => height(40);
+  static double get xxxlR => radius(40);
 
-  static const double paddingExtraExtraSmall = 2.0;
-  static const double paddingExtraSmall = 5.0;
-  static const double paddingEight = 8.0;
-  static const double paddingSmall = 10.0;
-  static const double paddingTwelve = 12.0;
-  static const double paddingDefault = 15.0;
-  static const double homePagePadding = 16.0;
-  static const double paddingDefaultAddress = 17.0;
-  static const double paddingLarge = 20.0;
-  static const double paddingExtraLarge = 25.0;
-  static const double paddingThirtyFive = 35.0;
-  static const double paddingOverLarge = 50.0;
-  static const double paddingExtraOverLarge = 35.0;
-  static const double paddingButton = 40.0;
-
-  static const double marginExtraSmall = 5.0;
-  static const double marginSmall = 10.0;
-  static const double marginDefault = 15.0;
-  static const double marginLarge = 20.0;
-  static const double marginExtraLarge = 25.0;
-  static const double marginAuthSmall = 30.0;
-  static const double marginAuth = 50.0;
+  /* ------------------------------------ x ----------------------------------- */
 
   static const double iconExtraSmall = 12.0;
   static const double iconSmall = 18.0;
@@ -97,26 +114,6 @@ class AppSizes {
   static const double imageExtraSeventy = 70.0;
   static const double bannerPadding = 40.0;
 
-  static const double topSpace = 30.0;
-  static const double splashLogoWidth = 150.0;
-
-  static const double chooseReviewImage = 40.0;
-  static const double profileImage = 100.0;
-  static const double logoHeight = 80.0;
-  static const double cardHeight = 265.0;
-
-  static const double radiusSmall = 5.0;
-  static const double radiusDefault = 10.0;
-  static const double radiusLarge = 15.0;
-  static const double radiusExtraLarge = 20.0;
-  static const double radiusOverLarge = 25.0;
-  static const double radiusButton = 30.0;
-  static const double radiusImage = 40.0;
-  static const double menuIcon = 25.0;
-  static const double featuredProductCard = 370.0;
-  static const double compareCardWidget = 200.0;
-  static const double clearanceHomeTitleHeight = 60.0;
-
   // border
   static const double borderWidthExtraSmall = 0.5;
   static const double borderWidthSmall = 1.0;
@@ -128,17 +125,4 @@ class AppSizes {
   static const double elevationSmall = 2.0;
   static const double elevationLarge = 10.0;
   static const double elevationExtraLarge = 15.0;
-
-  // size box's
-  static const Widget sizedBoxExtraSmallHeight = SizedBox(height: 5);
-  static const Widget sizedBoxSmallHeight = SizedBox(height: 10);
-  static const Widget sizedBoxDefaultHeight = SizedBox(height: 15);
-  static const Widget sizedBoxLargeHeight = SizedBox(height: 20);
-  static const Widget sizedBoxExtraLargeHeight = SizedBox(height: 25);
-
-  static const Widget sizedBoxExtraSmallWidth = SizedBox(width: 5);
-  static const Widget sizedBoxSmallWidth = SizedBox(width: 10);
-  static const Widget sizedBoxDefaultWidth = SizedBox(width: 15);
-  static const Widget sizedBoxLargeWidth = SizedBox(width: 20);
-  static const Widget sizedBoxExtraLargeWidth = SizedBox(width: 25);
 }

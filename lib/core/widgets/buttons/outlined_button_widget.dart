@@ -1,6 +1,6 @@
 import 'package:flutter_getx_structure/core/constants/app_colors.dart';
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
-import 'package:flutter_getx_structure/core/utils/app_sizes.dart';
+import 'package:flutter_getx_structure/core/utils/app_spacings.dart';
 import 'package:flutter_getx_structure/core/widgets/loadings/circular_loading_widget.dart';
 import 'package:flutter_getx_structure/core/widgets/texts/titles.dart';
 
@@ -25,7 +25,7 @@ class OutlinedButtonWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           TitleSmall(text),
-          AppSizes.sizedBoxSmallWidth,
+          AppSpacing.widthS,
           isLoading
               ? CircularLoadingWidget(
                 width: 20.w,
