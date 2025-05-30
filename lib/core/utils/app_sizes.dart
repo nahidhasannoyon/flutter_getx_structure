@@ -98,32 +98,43 @@ class AppSizes {
   static final double xxxlR = radius(40);
 
   /* ---------------------------------- Icons --------------------------------- */
-  static final double iconXxs = 12.0.sp;
-  static final double iconXs = 16.0.sp;
+  static final double iconXXS = 12.0.sp;
+  static final double iconXS = 16.0.sp;
   static final double iconS = 24.0.sp;
   static final double iconM = 32.0.sp;
   static final double iconL = 40.0.sp;
-  static final double iconXl = 48.0.sp;
-  static final double iconXxl = 56.0.sp;
-  static final double iconXxxl = 64.0.sp;
+  static final double iconXL = 48.0.sp;
+  static final double iconXXL = 56.0.sp;
+  static final double iconXXXL = 64.0.sp;
 
   /* --------------------------------- Border --------------------------------- */
-  static final double borderXxs = 1.0.w;
-  static final double borderXs = 2.0.w;
+  static final double borderXXS = 1.0.w;
+  static final double borderXS = 2.0.w;
   static final double borderS = 3.0.w;
   static final double borderM = 4.0.w;
   static final double borderL = 5.0.w;
-  static final double borderXl = 6.0.w;
-  static final double borderXxl = 8.0.w;
-  static final double borderXxxl = 10.0.w;
+  static final double borderXL = 6.0.w;
+  static final double borderXXL = 8.0.w;
+  static final double borderXXXL = 10.0.w;
 
   /* ------------------------------ Border Radius ----------------------------- */
-  static final double radiusXxs = 2.0.r;
-  static final double radiusXs = 4.0.r;
+  static final double radiusXXS = 2.0.r;
+  static final double radiusXS = 4.0.r;
   static final double radiusS = 8.0.r;
   static final double radiusM = 12.0.r;
   static final double radiusL = 16.0.r;
-  static final double radiusXl = 20.0.r;
-  static final double radiusXxl = 24.0.r;
-  static final double radiusXxxl = 32.0.r;
+  static final double radiusXL = 20.0.r;
+  static final double radiusXXL = 24.0.r;
+  static final double radiusXXXL = 32.0.r;
+
+  /* -------------------------------- Elevation ------------------------------- */
+  static const double elevationNone = 0;
+  static const double elevationXS = 1;
+  static const double elevationS = 2;
+  static const double elevationM = 4;
+  static const double elevationL = 6;
+  static const double elevationXL = 8;
+  static const double elevationXXL = 12;
+  static const double elevationXXXL = 16;
+  // ? https://m3.material.io/styles/elevation/tokens#7f8c10e0-6d56-4d9f-9525-9ca875758b20
 }

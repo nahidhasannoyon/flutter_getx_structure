@@ -7,22 +7,22 @@ class AppSpacing {
   /*                                 Edge Insets                                */
   /* -------------------------------------------------------------------------- */
   /* ----------------------------- EdgeInsets.all ----------------------------- */
-  static final EdgeInsets allXxs = EdgeInsets.all(AppSizes.xxsR);
-  static final EdgeInsets allXs = EdgeInsets.all(AppSizes.xsR);
+  static final EdgeInsets allXXS = EdgeInsets.all(AppSizes.xxsR);
+  static final EdgeInsets allXS = EdgeInsets.all(AppSizes.xsR);
   static final EdgeInsets allS = EdgeInsets.all(AppSizes.sR);
   static final EdgeInsets allM = EdgeInsets.all(AppSizes.mR);
   static final EdgeInsets allL = EdgeInsets.all(AppSizes.lR);
-  static final EdgeInsets allXl = EdgeInsets.all(AppSizes.xlR);
-  static final EdgeInsets allXxl = EdgeInsets.all(AppSizes.xxlR);
-  static final EdgeInsets allXxxl = EdgeInsets.all(AppSizes.xxxlR);
+  static final EdgeInsets allXL = EdgeInsets.all(AppSizes.xlR);
+  static final EdgeInsets allXXL = EdgeInsets.all(AppSizes.xxlR);
+  static final EdgeInsets allXXXL = EdgeInsets.all(AppSizes.xxxlR);
   static EdgeInsets all(double val) =>
       EdgeInsets.all(val.r); // ? Custom method to allow dynamic width
 
   /* -------------------- EdgeInsets.symmetric(horizontal) -------------------- */
-  static final EdgeInsets horizontalXxs = EdgeInsets.symmetric(
+  static final EdgeInsets horizontalXXS = EdgeInsets.symmetric(
     horizontal: AppSizes.xxsW,
   );
-  static final EdgeInsets horizontalXs = EdgeInsets.symmetric(
+  static final EdgeInsets horizontalXS = EdgeInsets.symmetric(
     horizontal: AppSizes.xsW,
   );
   static final EdgeInsets horizontalS = EdgeInsets.symmetric(
@@ -34,13 +34,13 @@ class AppSpacing {
   static final EdgeInsets horizontalL = EdgeInsets.symmetric(
     horizontal: AppSizes.lW,
   );
-  static final EdgeInsets horizontalXl = EdgeInsets.symmetric(
+  static final EdgeInsets horizontalXL = EdgeInsets.symmetric(
     horizontal: AppSizes.xlW,
   );
-  static final EdgeInsets horizontalXxl = EdgeInsets.symmetric(
+  static final EdgeInsets horizontalXXL = EdgeInsets.symmetric(
     horizontal: AppSizes.xxlW,
   );
-  static final EdgeInsets horizontalXxxl = EdgeInsets.symmetric(
+  static final EdgeInsets horizontalXXXL = EdgeInsets.symmetric(
     horizontal: AppSizes.xxxlW,
   );
   static EdgeInsets horizontal(double val) => EdgeInsets.symmetric(
@@ -48,10 +48,10 @@ class AppSpacing {
   ); // ? Custom method to allow dynamic height
 
   /* -------------------- EdgeInsets.symmetric(vertical) ---------------------- */
-  static final EdgeInsets verticalXxs = EdgeInsets.symmetric(
+  static final EdgeInsets verticalXXS = EdgeInsets.symmetric(
     vertical: AppSizes.xxsH,
   );
-  static final EdgeInsets verticalXs = EdgeInsets.symmetric(
+  static final EdgeInsets verticalXS = EdgeInsets.symmetric(
     vertical: AppSizes.xsH,
   );
   static final EdgeInsets verticalS = EdgeInsets.symmetric(
@@ -63,13 +63,13 @@ class AppSpacing {
   static final EdgeInsets verticalL = EdgeInsets.symmetric(
     vertical: AppSizes.lH,
   );
-  static final EdgeInsets verticalXl = EdgeInsets.symmetric(
+  static final EdgeInsets verticalXL = EdgeInsets.symmetric(
     vertical: AppSizes.xlH,
   );
-  static final EdgeInsets verticalXxl = EdgeInsets.symmetric(
+  static final EdgeInsets verticalXXL = EdgeInsets.symmetric(
     vertical: AppSizes.xxlH,
   );
-  static final EdgeInsets verticalXxxl = EdgeInsets.symmetric(
+  static final EdgeInsets verticalXXXL = EdgeInsets.symmetric(
     vertical: AppSizes.xxxlH,
   );
   static EdgeInsets vertical(double val) => EdgeInsets.symmetric(
@@ -77,11 +77,11 @@ class AppSpacing {
   ); // ? Custom method to allow dynamic width
 
   /* -------------------- EdgeInsets.symmetric(horizontal, vertical) --------- */
-  static final EdgeInsets symmetricXxs = EdgeInsets.symmetric(
+  static final EdgeInsets symmetricXXS = EdgeInsets.symmetric(
     horizontal: AppSizes.xxsW,
     vertical: AppSizes.xxsH,
   );
-  static final EdgeInsets symmetricXs = EdgeInsets.symmetric(
+  static final EdgeInsets symmetricXS = EdgeInsets.symmetric(
     horizontal: AppSizes.xsW,
     vertical: AppSizes.xsH,
   );
@@ -97,15 +97,15 @@ class AppSpacing {
     horizontal: AppSizes.lW,
     vertical: AppSizes.lH,
   );
-  static final EdgeInsets symmetricXl = EdgeInsets.symmetric(
+  static final EdgeInsets symmetricXL = EdgeInsets.symmetric(
     horizontal: AppSizes.xlW,
     vertical: AppSizes.xlH,
   );
-  static final EdgeInsets symmetricXxl = EdgeInsets.symmetric(
+  static final EdgeInsets symmetricXXL = EdgeInsets.symmetric(
     horizontal: AppSizes.xxlW,
     vertical: AppSizes.xxlH,
   );
-  static final EdgeInsets symmetricXxxl = EdgeInsets.symmetric(
+  static final EdgeInsets symmetricXXXL = EdgeInsets.symmetric(
     horizontal: AppSizes.xxxlW,
     vertical: AppSizes.xxxlH,
   );
@@ -116,69 +116,69 @@ class AppSpacing {
       ); // ? Custom method to allow dynamic width and height
 
   /* -------------------------- EdgeInsets.only(left) ------------------------- */
-  static final EdgeInsets onlyLeftXxs = EdgeInsets.only(left: AppSizes.xxsW);
-  static final EdgeInsets onlyLeftXs = EdgeInsets.only(left: AppSizes.xsW);
+  static final EdgeInsets onlyLeftXXS = EdgeInsets.only(left: AppSizes.xxsW);
+  static final EdgeInsets onlyLeftXS = EdgeInsets.only(left: AppSizes.xsW);
   static final EdgeInsets onlyLeftS = EdgeInsets.only(left: AppSizes.sW);
   static final EdgeInsets onlyLeftM = EdgeInsets.only(left: AppSizes.mW);
   static final EdgeInsets onlyLeftL = EdgeInsets.only(left: AppSizes.lW);
-  static final EdgeInsets onlyLeftXl = EdgeInsets.only(left: AppSizes.xlW);
-  static final EdgeInsets onlyLeftXxl = EdgeInsets.only(left: AppSizes.xxlW);
-  static final EdgeInsets onlyLeftXxxl = EdgeInsets.only(left: AppSizes.xxxlW);
+  static final EdgeInsets onlyLeftXL = EdgeInsets.only(left: AppSizes.xlW);
+  static final EdgeInsets onlyLeftXXL = EdgeInsets.only(left: AppSizes.xxlW);
+  static final EdgeInsets onlyLeftXXXL = EdgeInsets.only(left: AppSizes.xxxlW);
   static EdgeInsets onlyLeft(double val) =>
       EdgeInsets.only(left: val.w); // ? Custom method to allow dynamic width
 
   /* -------------------------- EdgeInsets.only(right) ------------------------ */
-  static final EdgeInsets onlyRightXxs = EdgeInsets.only(right: AppSizes.xxsW);
-  static final EdgeInsets onlyRightXs = EdgeInsets.only(right: AppSizes.xsW);
+  static final EdgeInsets onlyRightXXS = EdgeInsets.only(right: AppSizes.xxsW);
+  static final EdgeInsets onlyRightXS = EdgeInsets.only(right: AppSizes.xsW);
   static final EdgeInsets onlyRightS = EdgeInsets.only(right: AppSizes.sW);
   static final EdgeInsets onlyRightM = EdgeInsets.only(right: AppSizes.mW);
   static final EdgeInsets onlyRightL = EdgeInsets.only(right: AppSizes.lW);
-  static final EdgeInsets onlyRightXl = EdgeInsets.only(right: AppSizes.xlW);
-  static final EdgeInsets onlyRightXxl = EdgeInsets.only(right: AppSizes.xxlW);
-  static final EdgeInsets onlyRightXxxl = EdgeInsets.only(
+  static final EdgeInsets onlyRightXL = EdgeInsets.only(right: AppSizes.xlW);
+  static final EdgeInsets onlyRightXXL = EdgeInsets.only(right: AppSizes.xxlW);
+  static final EdgeInsets onlyRightXXXL = EdgeInsets.only(
     right: AppSizes.xxxlW,
   );
   static EdgeInsets onlyRight(double val) =>
       EdgeInsets.only(right: val.w); // ? Custom method to allow dynamic width
 
   /* -------------------------- EdgeInsets.only(top) -------------------------- */
-  static final EdgeInsets onlyTopXxs = EdgeInsets.only(top: AppSizes.xxsH);
-  static final EdgeInsets onlyTopXs = EdgeInsets.only(top: AppSizes.xsH);
+  static final EdgeInsets onlyTopXXS = EdgeInsets.only(top: AppSizes.xxsH);
+  static final EdgeInsets onlyTopXS = EdgeInsets.only(top: AppSizes.xsH);
   static final EdgeInsets onlyTopS = EdgeInsets.only(top: AppSizes.sH);
   static final EdgeInsets onlyTopM = EdgeInsets.only(top: AppSizes.mH);
   static final EdgeInsets onlyTopL = EdgeInsets.only(top: AppSizes.lH);
-  static final EdgeInsets onlyTopXl = EdgeInsets.only(top: AppSizes.xlH);
-  static final EdgeInsets onlyTopXxl = EdgeInsets.only(top: AppSizes.xxlH);
-  static final EdgeInsets onlyTopXxxl = EdgeInsets.only(top: AppSizes.xxxlH);
+  static final EdgeInsets onlyTopXL = EdgeInsets.only(top: AppSizes.xlH);
+  static final EdgeInsets onlyTopXXL = EdgeInsets.only(top: AppSizes.xxlH);
+  static final EdgeInsets onlyTopXXXL = EdgeInsets.only(top: AppSizes.xxxlH);
   static EdgeInsets onlyTop(double val) =>
       EdgeInsets.only(top: val.h); // ? Custom method to allow dynamic height
 
   /* -------------------------- EdgeInsets.only(bottom) ----------------------- */
-  static final EdgeInsets onlyBottomXxs = EdgeInsets.only(
+  static final EdgeInsets onlyBottomXXS = EdgeInsets.only(
     bottom: AppSizes.xxsH,
   );
-  static final EdgeInsets onlyBottomXs = EdgeInsets.only(bottom: AppSizes.xsH);
+  static final EdgeInsets onlyBottomXS = EdgeInsets.only(bottom: AppSizes.xsH);
   static final EdgeInsets onlyBottomS = EdgeInsets.only(bottom: AppSizes.sH);
   static final EdgeInsets onlyBottomM = EdgeInsets.only(bottom: AppSizes.mH);
   static final EdgeInsets onlyBottomL = EdgeInsets.only(bottom: AppSizes.lH);
-  static final EdgeInsets onlyBottomXl = EdgeInsets.only(bottom: AppSizes.xlH);
-  static final EdgeInsets onlyBottomXxl = EdgeInsets.only(
+  static final EdgeInsets onlyBottomXL = EdgeInsets.only(bottom: AppSizes.xlH);
+  static final EdgeInsets onlyBottomXXL = EdgeInsets.only(
     bottom: AppSizes.xxlH,
   );
-  static final EdgeInsets onlyBottomXxxl = EdgeInsets.only(
+  static final EdgeInsets onlyBottomXXXL = EdgeInsets.only(
     bottom: AppSizes.xxxlH,
   );
   static EdgeInsets onlyBottom(double val) =>
       EdgeInsets.only(bottom: val.h); // ? Custom method to allow dynamic height
 
   /* -------------------------- EdgeInsets.only(left, right, top, bottom) ------ */
-  static final EdgeInsets onlyXxs = EdgeInsets.only(
+  static final EdgeInsets onlyXXS = EdgeInsets.only(
     left: AppSizes.xxsW,
     right: AppSizes.xxsW,
     top: AppSizes.xxsH,
     bottom: AppSizes.xxsH,
   );
-  static final EdgeInsets onlyXs = EdgeInsets.only(
+  static final EdgeInsets onlyXS = EdgeInsets.only(
     left: AppSizes.xsW,
     right: AppSizes.xsW,
     top: AppSizes.xsH,
@@ -202,19 +202,19 @@ class AppSpacing {
     top: AppSizes.lH,
     bottom: AppSizes.lH,
   );
-  static final EdgeInsets onlyXl = EdgeInsets.only(
+  static final EdgeInsets onlyXL = EdgeInsets.only(
     left: AppSizes.xlW,
     right: AppSizes.xlW,
     top: AppSizes.xlH,
     bottom: AppSizes.xlH,
   );
-  static final EdgeInsets onlyXxl = EdgeInsets.only(
+  static final EdgeInsets onlyXXL = EdgeInsets.only(
     left: AppSizes.xxlW,
     right: AppSizes.xxlW,
     top: AppSizes.xxlH,
     bottom: AppSizes.xxlH,
   );
-  static final EdgeInsets onlyXxxl = EdgeInsets.only(
+  static final EdgeInsets onlyXXXL = EdgeInsets.only(
     left: AppSizes.xxxlW,
     right: AppSizes.xxxlW,
     top: AppSizes.xxxlH,
@@ -267,26 +267,26 @@ class AppSpacing {
   ); // ? Custom method to allow dynamic width and height
 
   /* ----------------------------- SizedBox.width ------------------------------ */
-  static final SizedBox widthXxs = SizedBox(width: AppSizes.xxsW);
-  static final SizedBox widthXs = SizedBox(width: AppSizes.xsW);
+  static final SizedBox widthXXS = SizedBox(width: AppSizes.xxsW);
+  static final SizedBox widthXS = SizedBox(width: AppSizes.xsW);
   static final SizedBox widthS = SizedBox(width: AppSizes.sW);
   static final SizedBox widthM = SizedBox(width: AppSizes.mW);
   static final SizedBox widthL = SizedBox(width: AppSizes.lW);
-  static final SizedBox widthXl = SizedBox(width: AppSizes.xlW);
-  static final SizedBox widthXxl = SizedBox(width: AppSizes.xxlW);
-  static final SizedBox widthXxxl = SizedBox(width: AppSizes.xxxlW);
+  static final SizedBox widthXL = SizedBox(width: AppSizes.xlW);
+  static final SizedBox widthXXL = SizedBox(width: AppSizes.xxlW);
+  static final SizedBox widthXXXL = SizedBox(width: AppSizes.xxxlW);
   static SizedBox width(double val) =>
       SizedBox(width: val.w); // ? Custom method to allow dynamic width
 
   /* ----------------------------- SizedBox.height ----------------------------- */
-  static final SizedBox heightXxs = SizedBox(height: AppSizes.xxsH);
-  static final SizedBox heightXs = SizedBox(height: AppSizes.xsH);
+  static final SizedBox heightXXS = SizedBox(height: AppSizes.xxsH);
+  static final SizedBox heightXS = SizedBox(height: AppSizes.xsH);
   static final SizedBox heightS = SizedBox(height: AppSizes.sH);
   static final SizedBox heightM = SizedBox(height: AppSizes.mH);
   static final SizedBox heightL = SizedBox(height: AppSizes.lH);
-  static final SizedBox heightXl = SizedBox(height: AppSizes.xlH);
-  static final SizedBox heightXxl = SizedBox(height: AppSizes.xxlH);
-  static final SizedBox heightXxxl = SizedBox(height: AppSizes.xxxlH);
+  static final SizedBox heightXL = SizedBox(height: AppSizes.xlH);
+  static final SizedBox heightXXL = SizedBox(height: AppSizes.xxlH);
+  static final SizedBox heightXXXL = SizedBox(height: AppSizes.xxxlH);
   static SizedBox height(double val) =>
       SizedBox(height: val.h); // ? Custom method to allow dynamic height
 
