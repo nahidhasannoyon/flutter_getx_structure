@@ -1,7 +1,7 @@
 import 'package:flutter_getx_structure/core/constants/app_colors.dart';
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
 import 'package:flutter_getx_structure/core/extensions/string_extensions.dart';
-import 'package:flutter_getx_structure/core/widgets/app_text.dart';
+import 'package:flutter_getx_structure/core/widgets/texts/bodies.dart';
 
 class RadioFieldWidget extends StatelessWidget {
   const RadioFieldWidget({
@@ -41,9 +41,8 @@ class RadioFieldWidget extends StatelessWidget {
                                   : AppColor.space400,
                         ),
                         SizedBox(width: 10.w),
-                        Txt(
+                        BodyMedium(
                           radioItem.toString().toReadableEnum(),
-                          tst: TST.bodyMedium,
                           color:
                               selectedRadio == radioItem
                                   ? AppColor.buttonTxt

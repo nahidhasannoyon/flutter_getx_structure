@@ -1,6 +1,7 @@
 import 'package:flutter_getx_structure/core/constants/app_colors.dart';
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
-import 'package:flutter_getx_structure/core/widgets/app_text.dart';
+import 'package:flutter_getx_structure/core/widgets/texts/bodies.dart';
+import 'package:flutter_getx_structure/core/widgets/texts/titles.dart';
 
 class ErrorMessageWidget extends StatelessWidget {
   final String errorTitle;
@@ -24,12 +25,8 @@ class ErrorMessageWidget extends StatelessWidget {
       child: ListTile(
         contentPadding: EdgeInsets.zero,
         leading: Icon(Icons.error_outline, color: AppColor.lightErrorIcon),
-        title: Txt(errorTitle, tst: TST.titleSmall),
-        subtitle: Txt(
-          errorMessage,
-          tst: TST.bodyMedium,
-          color: AppColor.errorBodyText,
-        ),
+        title: TitleSmall(errorTitle),
+        subtitle: BodyMedium(errorMessage, color: AppColor.errorBodyText),
       ),
     );
   }

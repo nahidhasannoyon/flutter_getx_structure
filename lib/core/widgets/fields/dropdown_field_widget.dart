@@ -1,6 +1,5 @@
 import 'package:flutter_getx_structure/core/constants/app_colors.dart';
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
-import 'package:flutter_getx_structure/core/theme/app_theme.dart';
 
 class DropdownFieldWidget<T> extends StatelessWidget {
   const DropdownFieldWidget({

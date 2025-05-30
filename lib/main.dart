@@ -3,7 +3,6 @@ import 'package:flutter_getx_structure/core/config/app_config.dart';
 import 'package:flutter_getx_structure/core/config/app_initializer.dart';
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
 import 'package:flutter_getx_structure/core/helpers/translation_helper.dart';
-import 'package:flutter_getx_structure/core/theme/app_theme.dart';
 import 'package:flutter_getx_structure/core/utils/app_logger.dart';
 import 'package:flutter_getx_structure/routes/app_pages.dart';
 
