@@ -137,4 +137,15 @@ class AppSizes {
   static const double elevationXXL = 12;
   static const double elevationXXXL = 16;
   // ? https://m3.material.io/styles/elevation/tokens#7f8c10e0-6d56-4d9f-9525-9ca875758b20
+
+  /* --------------------------------- Avatar --------------------------------- */
+  static final double avatarXXS = 16.0.sp;
+  static final double avatarXS = 24.0.sp;
+  static final double avatarS = 32.0.sp;
+  static final double avatarM = 40.0.sp;
+  static final double avatarL = 48.0.sp;
+  static final double avatarXL = 56.0.sp;
+  static final double avatarXXL = 64.0.sp;
+  static final double avatarXXXL = 72.0.sp;
+  static double avatar(double size) => size.sp;
 }
