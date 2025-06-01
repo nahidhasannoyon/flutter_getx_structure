@@ -1,44 +1,43 @@
 import 'package:flutter_getx_structure/core/constants/app_imports.dart';
 
+/// Central breakpoint values
+class ResponsiveBreakpoints {
+  static const double mobile = 600;
+  static const double tablet = 1200;
+}
+
 class ResponsiveHelper {
-  ResponsiveHelper._();
+  static bool isWeb() => GetPlatform.isWeb;
 
-  static bool isMobilePhone() {
-    if (!kIsWeb) {
-      return true;
+  static bool isMobilePhone() => !GetPlatform.isWeb;
+
+  static bool isMobile() => Get.width < ResponsiveBreakpoints.mobile;
+
+  static bool isTablet() =>
+      Get.width >= ResponsiveBreakpoints.mobile &&
+      Get.width < ResponsiveBreakpoints.tablet;
+
+  static bool isDesktop() => Get.width >= ResponsiveBreakpoints.tablet;
+
+  static LayoutType getLayoutType() {
+    final width = Get.width;
+    if (width < ResponsiveBreakpoints.mobile) {
+      return LayoutType.mobile;
+    } else if (width < ResponsiveBreakpoints.tablet) {
+      return LayoutType.tablet;
     } else {
-      return false;
-    }
-  }
-
-  static bool isWeb() {
-    return kIsWeb;
-  }
-
-  static bool isMobile(BuildContext context) {
-    final size = MediaQuery.of(context).size.width;
-    if (size < 600 || !kIsWeb) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  static bool isTab(BuildContext context) {
-    final size = MediaQuery.of(context).size.width;
-    if (size < 1300 && size >= 600) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  static bool isDesktop(BuildContext context) {
-    final size = MediaQuery.of(context).size.width;
-    if (size >= 1300) {
-      return true;
-    } else {
-      return false;
+      return LayoutType.desktop;
     }
   }
 }
+
+/* 
+? Example usage in a widget
+if (ResponsiveHelper.isDesktop()) {
+  # Show sidebar
+} else if (ResponsiveHelper.isMobile()) {
+  # Use bottom nav
+} else {
+  # Use a different layout for tablets
+}
+*/
