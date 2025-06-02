@@ -68,7 +68,7 @@ class SmartPageLayout extends StatelessWidget {
       case DataState.offline:
         return offline ?? const SizedBox();
       case DataState.success:
-        return success ?? const SizedBox();
+        return success ?? _buildMainLayout();
     }
   }
 
