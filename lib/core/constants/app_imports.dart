@@ -73,3 +73,6 @@ export 'package:flutter_getx_structure/modules/home/presentation/home_controller
 export 'package:flutter_getx_structure/modules/home/presentation/home_page.dart';
 export 'package:flutter_getx_structure/routes/app_pages.dart';
 export 'package:flutter_getx_structure/routes/home_routes.dart';
+export 'package:flutter_getx_structure/core/helpers/orientation_helper.dart';
+export 'package:flutter_getx_structure/core/widgets/layouts/orientation_layout.dart';
+export 'package:flutter_getx_structure/core/widgets/layouts/responsive_layout.dart';
